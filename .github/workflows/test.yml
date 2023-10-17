@@ -22,7 +22,7 @@ jobs:
   test:
     runs-on: [self-hosted, '${{ github.repository }}']
     container:
-      image: rockylinux:9-minimal
+      image: rockylinux:9
 
     steps:
       - run: |
