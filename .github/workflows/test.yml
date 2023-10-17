@@ -35,7 +35,7 @@ jobs:
       
       - run: |
           echo '${{ toJSON(job.services.nginx.ports) }}'
-          curl localhost:90
+          curl localhost:80
           
         
 ...
