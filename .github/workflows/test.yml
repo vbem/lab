@@ -21,21 +21,22 @@ defaults:
 jobs:
   test:
     runs-on: [self-hosted, '${{ github.repository }}']
-    container:
-      image: rockylinux:9
+    #container:
+    #  image: rockylinux:9
+    services:
+      nginx:
+        image: nginx
+        ports:
+          - 80
 
     steps:
-      - run: |
-          dnf install tar
       # https://github.com/marketplace/actions/checkout
       - uses: actions/checkout@v4
         with:
           persist-credentials: false
       
       - run: |
-          cat /etc/os-release
-          echo "\$0=$0"
-          echo "TZ=$TZ"
+          curl loclahost:80
           
         
 ...
