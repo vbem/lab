@@ -35,6 +35,7 @@ jobs:
       - run: |
           cat /etc/os-release
           echo "\$0=$0"
+          echo "TZ=$TZ"
           
         
 ...
