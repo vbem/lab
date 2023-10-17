@@ -21,13 +21,11 @@ defaults:
 jobs:
   test:
     runs-on: [self-hosted, '${{ github.repository }}']
-    #container:
-    #  image: rockylinux:9
+    container:
+      image: rockylinux:9
     services:
       nginx:
         image: nginx
-        ports:
-          - 8080:80
 
     steps:
       # https://github.com/marketplace/actions/checkout
@@ -36,8 +34,7 @@ jobs:
       - run: |
           echo '${{ toJSON(job.services.nginx.ports) }}'
           cat /etc/os-release
-          sleep 300
-          curl -ivvv localhost:${{ job.services.nginx.ports['80'] }}
+          curl -ivvv nginx
           
         
 ...
