@@ -34,7 +34,7 @@ jobs:
       - uses: actions/checkout@v4
       
       - run: |
-          curl loclahost:80
+          echo '${{ toJSON(job.services.nginx.ports) }}'
           
         
 ...
