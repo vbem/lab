@@ -35,8 +35,8 @@ jobs:
       
       - run: |
           echo '${{ toJSON(job.services.nginx.ports) }}'
-          sleep 3
-          curl localhost:8080
+          cat /etc/os-release
+          curl localhost:${{ toJSON(job.services.nginx.ports) }}
           
         
 ...
