@@ -14,9 +14,15 @@ on:
     branches: [master, main]
   workflow_dispatch:
 
+defaults:
+  run:
+    shell: bash
+
 jobs:
   test:
     runs-on: [self-hosted, '${{ github.repository }}']
+    container:
+      image: rockylinux:9-minimal
 
     steps:
       # https://github.com/marketplace/actions/checkout
@@ -24,5 +30,9 @@ jobs:
         with:
           persist-credentials: false
       
-      - run: cat /etc/os-release
+      - run: |
+          cat /etc/os-release
+          echo "\$0=$0"
+          
+        
 ...
