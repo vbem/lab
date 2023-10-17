@@ -27,7 +27,7 @@ jobs:
       nginx:
         image: nginx
         ports:
-          - 1000:80
+          - 8080:80
 
     steps:
       # https://github.com/marketplace/actions/checkout
@@ -36,7 +36,7 @@ jobs:
       - run: |
           echo '${{ toJSON(job.services.nginx.ports) }}'
           sleep 3
-          curl localhost:1000
+          curl localhost:8080
           
         
 ...
