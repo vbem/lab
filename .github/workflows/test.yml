@@ -23,18 +23,20 @@ jobs:
     runs-on: [self-hosted, '${{ github.repository }}']
     container:
       image: rockylinux:9
-    services:
-      nginx:
-        image: nginx
+    #services:
+    #  nginx:
+    #    image: nginx
 
     steps:
       # https://github.com/marketplace/actions/checkout
       - uses: actions/checkout@v4
       
       - run: |
-          echo '${{ toJSON(job.services.nginx.ports) }}'
-          cat /etc/os-release
-          curl -ivvv nginx
+          curl -L \
+            -H "Accept: application/vnd.github+json" \
+            -H "Authorization: Bearer ${{ github.token }}" \
+            -H "X-GitHub-Api-Version: 2022-11-28" \
+            https://api.github.com/meta
           
         
 ...
