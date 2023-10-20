@@ -32,6 +32,7 @@ jobs:
       - uses: actions/checkout@v4
       
       - run: |
+          echo "PATH=$PATH"
           curl -L \
             -H "Accept: application/vnd.github+json" \
             -H "Authorization: Bearer ${{ github.token }}" \
