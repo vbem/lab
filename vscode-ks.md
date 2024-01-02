@@ -53,6 +53,7 @@ Trim Trailing Whitespace | Ctrl+K Ctrl+X
 -- | --
 Trigger Suggest | Ctrl+I
 Trigger Parameter Hints | Alt+I
+Show Hover | Ctrl+K Ctrl+I
 Go to Definition | F12, Ctrl+Click
 Open Definition to the Side | Ctrl+K F12, Ctrl+Alt+Click
 Peek Definition | Alt+F12
