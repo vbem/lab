@@ -13,11 +13,10 @@ Toggle Panel | Ctrl+J
 Zoom In/Out | Ctrl+-/=
 Fast scrolling | Alt+Scroll
 
-## Navigation
+## Editors
 **Command** | **Keybindings**
 -- | --
 Open Previous/Next Editor | Ctrl+PageUp/PageDown
-Go Back/Forward | Alt+Left/Right
 Split Editor | Ctrl+\
 Open from Explorer to Side | Alt+Click
 Move Editor into Next/Previous Group | Ctrl+Alt+Right/Left
@@ -36,13 +35,15 @@ Find Next/Previous Selection | Ctrl+F3 / Ctrl+Shift+F3
 Select All Occurrences | Ctrl+F2, Ctrl+Shift+L
 Column Selection | Shift+Alt+Click
 
-## Editor
+## Editing
 **Command** | **Keybindings**
 -- | --
+Go Back/Forward | Alt+Left/Right
+Go to Bracket | Ctrl+Shift+\
 Move Line Up/Down | Alt+Up/Down
 Copy Line Up/Down | Shift+Alt+Up/Down
+Toggle Fold | Ctrl+K Ctrl+L
 Indent/Outdent Line | Ctrl+]/[
-Fold/Unfold | Ctrl+Shift+[/]
 Toggle Line Comment | Ctrl+/
 Toggle Block Comment | Shift+Alt+A
 Toggle Word Wrap | Alt+Z
@@ -57,7 +58,7 @@ Show Hover | Ctrl+K Ctrl+I
 Go to Definition | F12, Ctrl+Click
 Open Definition to the Side | Ctrl+K F12, Ctrl+Alt+Click
 Peek Definition | Alt+F12
-Go to References | Shift+F12
+Go or Peek References | Shift+F12
 Find All References | Shift+Alt+F12
 Preview Markdown in Group / to Side | Ctrl+Shift+V / Ctrl+K V
 Quick Fix | Ctrl+.
@@ -69,11 +70,6 @@ Format Document/Selection | Shift+Alt+F / Ctrl+K Ctrl+F
 **Command** | **Keybindings**
 -- | --
 Toggle Breakpoint | F9
-Start/Continue Debugging | F5
-Stop Debugging | Shift+F5
+Start/Stop Debugging | F5 / Shift+F5
 Step Over | F10
 Step Into/Out | F11 / Shift+F11
-
-##
-**Command** | **Keybindings**
--- | --
