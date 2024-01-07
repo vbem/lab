@@ -52,8 +52,8 @@ Trim Trailing Whitespace | Ctrl+K Ctrl+X
 ## Rich Lang
 **Command** | **Keybindings**
 -- | --
-Trigger Suggest | Ctrl+I
-Trigger Parameter Hints | Alt+I
+Trigger Suggest | Ctrl+Space, Ctrl+;
+Trigger Parameter Hints | Ctrl+Shift+Space, Ctrl+Shift+;
 Show Hover | Ctrl+K Ctrl+I
 Go to Definition | F12, Ctrl+Click
 Open Definition to the Side | Ctrl+K F12, Ctrl+Alt+Click
