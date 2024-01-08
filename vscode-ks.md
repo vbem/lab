@@ -17,6 +17,7 @@ Fast scrolling | Alt+Scroll
 **Command** | **Keybindings**
 -- | --
 Open Previous/Next Editor | Ctrl+PageUp/PageDown
+Move Editor Left/Right | Ctrl+Shift+PageUp/PageDown
 Split Editor | Ctrl+\
 Open from Explorer to Side | Alt+Click
 Move Editor into Next/Previous Group | Ctrl+Alt+Right/Left
@@ -65,6 +66,14 @@ Quick Fix | Ctrl+.
 Go to Symbol in Editor/Workspace | Ctrl+Shift+O / Ctrl+T
 Rename Symbol | F2
 Format Document/Selection | Shift+Alt+F / Ctrl+K Ctrl+F
+
+## Copilot
+**Command** | **Keybindings**
+-- | --
+Accept Inline Suggestion | Tab
+Accept Next Word Of Inline Suggestion | Ctrl+Right
+Next/Previous suggestion | Alt+]/[
+Inline Chat | Ctrl+I
 
 ## Debug
 **Command** | **Keybindings**
